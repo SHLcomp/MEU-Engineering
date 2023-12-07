@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Castoro+Titling&family=Caveat&family=Cedarville+Cursive&family=Dancing+Script:wght@600&family=Josefin+Sans:wght@300&family=Kablammo&family=Lobster&family=Noto+Sans+Osmanya&family=Phudu:wght@300&family=Raleway:wght@300;600&family=Roboto:wght@500&family=Shadows+Into+Light&family=Vina+Sans&display=swap');
+
+
+/* variables */
+
+:root{
+    --secondary-bg-color: rgb(185, 182, 182);
+    --btn-color: rgb(112, 112, 224);
+    --footer-bg-color: rgba(11, 10, 10, 0.774);
+    --res-div-items-bg-color: rgb(212, 218, 223);
+    --primary-bg-color: rgb(223, 158, 158);
+}
+
+/* shared css */
+.a{
+    text-decoration: none;
+    color: black !important;
+}
+
+.bg_img{
+    width: 100% !important;
+}
+.btn{
+    background-color: var(--btn-color) !important;
+}
+.section{
+    margin-top: 4cm !important;
+}
+
+
+/* header */
+.navbar{
+    box-shadow: 4px 3px 12px;
+    display: flex !important;
+    flex-direction: row !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar-toggler{
+    margin-right: 30px !important;
+}
+/* .navbar-collapse{
+    margin-right: 50% !important;
+} */
+.ul{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 70% !important;
+}
+.subnav{
+    color: blueviolet !important;
+}
+.submenu{
+    box-shadow: 4px 4px 12px;
+    left: -1cm !important;
+    margin-top: 10px !important;
+}
+.dropdown-item:hover{
+    background-color: var(--secondary-bg-color) !important;
+    border-radius: 5px;
+}
+.title{
+    font-family: 'Raleway' !important;
+    font-weight: 700;
+    transition: .4s ease;
+    cursor: pointer;
+    &:hover{
+        color: var(--primary-bg-color);
+    }
+}
+
+/* cards */
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+.card-img-top{
+    height: 50%;
+}
+.card-body{
+    text-align: right;
+}
+/* messages */
+.h5_msg{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    padding-inline: 10px;
+}
+
+/* resources */
+iframe{
+    margin-top: 20px;
+}
+.res-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.res-div h3{
+    text-align: center;
+}
+.res-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.res-item h3{
+    text-align: right;
+}
+.res-item{  
+    background-color: var(--res-div-items-bg-color);
+    padding-left: -2cm !important;
+    padding-right: -2cm !important;
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px;
+}
+.helpothers p{
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+}

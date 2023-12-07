@@ -1,0 +1,35 @@
+@media screen and (min-width: 800px) {
+    iframe{
+        width: 660px !important;
+        height: 315px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    iframe{
+        width: 260px;
+        height: 115px;
+    }
+}
+
+/* navbar responsive */
+@media screen and (max-width:992px){
+    .navbar{
+        position: fixed !important;
+        width: 100%;
+        background-color: white;
+    }
+    .title-div{
+        display: flex;
+        position: fixed;
+        left: 50%;
+        top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .navbar-toggler{
+        margin-left: 1cm;
+    }
+
+}
